@@ -2,6 +2,10 @@
 
 This repository contains tasks for designing various components of a frontend application. Below is the breakdown of tasks along with their descriptions.
 
+```bash
+   git clone --single-branch -b frontend https://github.com/blackstackhub/email-hosting-server
+```
+
 ## theme/
 
 ### Objective
