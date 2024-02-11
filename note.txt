@@ -1,0 +1,14 @@
+*/note.txt
+
+u can add note in */note.txt when you make a change/wants to pass a message
+
+write in format like below
+
+// start devfemibadmus
+i have create a note.txt but wasn't working fine please checkout before calling method Hey in main.py
+// end devfemibadmus
+
+
+// start John Doe
+i have create a note.txt but wasn't working fine please checkout before calling method Hey in main.py
+// end John Doe

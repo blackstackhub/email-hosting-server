@@ -1,0 +1,5 @@
+inbox.html
+
+create a mail table 
+allow selecting/select all features
+add a fixed horizontal container(width full heaight 30% of device) at top with children container box of particular width 
