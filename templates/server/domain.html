@@ -1,0 +1,27 @@
+<!-- Messages -->
+{% for message in messages %}
+    <p>{{ message.tag }} {{ message }}</p>
+{% endfor %}
+<br/>
+
+{% if domain %}
+    <p>Domain: {{ domain.name }}</p>
+    {% with users=domain.get_virtual_users %}
+        <form method="post">
+            <p>password is encrypt u can only change password</p>
+            {% csrf_token %}
+            <label for="email">Select Email:</label>
+            <select id="email" name="email">
+                {% for user in users %}
+                    {% if forloop.first %}
+                        <option value="{{ user.email }}" selected>{{ user.email }}</option>
+                    {% else %}
+                        <option value="{{ user.email }}">{{ user.email }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+            <input type="password" name="password"/>
+            <button type="submit">Submit</button>
+        </form>
+    {% endwith %}
+{% endif %}
